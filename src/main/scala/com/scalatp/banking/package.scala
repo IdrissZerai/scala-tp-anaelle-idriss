@@ -1,17 +1,17 @@
-package com.goyeau
+package com.scalatp
 
 import java.net.URI
-
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-
 import com.lightbend.kafka.scala.streams.{KStreamS, StreamsBuilderS}
 import io.circe.{Decoder, Encoder}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord, RecordMetadata}
 import org.apache.kafka.streams.Consumed
 import org.apache.kafka.streams.kstream.Produced
 
-package object socialnetwork {
+import java.lang
+
+package object banking {
 
   implicit def encoderUri: Encoder[URI] = Encoder[String].contramap(_.toString)
   implicit def decoderUri: Decoder[URI] = Decoder[String].map(URI.create)

@@ -1,6 +1,6 @@
-package com.goyeau.socialnetwork.model
+package com.scalatp.banking.model
 
-import com.goyeau.socialnetwork.Record
+import com.scalatp.banking.Record
 
 case class DenormalisedAccount(account: Account, owner: User, transactions: DenormalisedAccount.Transactions)
 

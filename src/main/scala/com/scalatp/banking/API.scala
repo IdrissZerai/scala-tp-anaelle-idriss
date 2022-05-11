@@ -1,7 +1,8 @@
-package com.goyeau.socialnetwork
+package com.scalatp.banking
 
 import com.goyeau.kafka.streams.circe.CirceSerdes._
 import com.goyeau.socialnetwork.model._
+import com.scalatp.banking.model.{Account, Id, Operation, User}
 import io.circe.generic.auto._
 import io.circe.java8.time._
 

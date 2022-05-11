@@ -1,4 +1,4 @@
-package com.goyeau.socialnetwork
+package com.scalatp.banking
 
 trait Record[K, V] {
   def topic: String

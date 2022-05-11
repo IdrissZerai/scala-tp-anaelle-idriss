@@ -1,9 +1,10 @@
-package com.goyeau.socialnetwork
+package com.scalatp.banking
 
 import java.util.Properties
-
 import org.apache.kafka.clients.producer.KafkaProducer
 import org.apache.kafka.common.serialization.Serializer
+
+import java.lang.Record
 
 object Producer {
   def apply[V] = new ProducerBuilder[V]

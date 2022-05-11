@@ -1,4 +1,4 @@
-package com.goyeau.socialnetwork
+package com.scalatp.banking
 
 object Config {
   val BootstrapServers = "localhost:9092"

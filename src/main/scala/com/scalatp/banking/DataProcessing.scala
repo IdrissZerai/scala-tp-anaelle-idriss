@@ -1,13 +1,15 @@
-package com.goyeau.socialnetwork
+package com.scalatp.banking
 
 import com.goyeau.kafka.streams.circe.CirceSerdes
 import com.goyeau.kafka.streams.circe.CirceSerdes._
 import com.goyeau.socialnetwork.model._
 import com.lightbend.kafka.scala.streams.ImplicitConversions._
 import com.lightbend.kafka.scala.streams.StreamsBuilderS
+import com.scalatp.banking.model.{Account, DenormalisedAccount, Id, Operation, User}
 import io.circe.generic.auto._
 import io.circe.java8.time._
 import io.circe.syntax._
+
 import java.util.Properties
 import monocle.macros.syntax.lens._
 import org.apache.kafka.streams.{KafkaStreams, StreamsConfig}

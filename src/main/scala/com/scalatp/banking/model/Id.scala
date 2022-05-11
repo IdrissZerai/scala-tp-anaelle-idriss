@@ -1,4 +1,4 @@
-package com.goyeau.socialnetwork.model
+package com.scalatp.banking.model
 
 import io.circe.{Decoder, Encoder, KeyDecoder, KeyEncoder}
 
